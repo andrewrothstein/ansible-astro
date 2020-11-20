@@ -1,0 +1,10 @@
+---
+# vars file for astro
+astro_platform: '{{ astro_os }}_{{ astro_arch }}'
+astro_archive: astro_{{ astro_ver }}_{{ astro_platform }}.{{ astro_archive_type | default("tar.gz") }}
+astro_tmp_archive: /tmp/{{ astro_archive }}
+astro_url: '{{ astro_mirror }}/v{{ astro_ver }}/{{ astro_archive }}'
+astro_checksum: '{{ astro_checksums[astro_ver][astro_platform] }}'
+astro_install_dir: '{{ astro_parent_install_dir }}/astro-{{ astro_ver }}'
+astro_install_exe: '{{ astro_install_dir }}/astro'
+astro_link: '{{ astro_parent_install_dir }}/bin/astro'

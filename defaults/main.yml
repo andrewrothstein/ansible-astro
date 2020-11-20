@@ -1,0 +1,37 @@
+---
+# defaults file for astro
+astro_ver: 0.22.2
+astro_os: linux
+astro_arch: amd64
+astro_parent_install_dir: /usr/local
+astro_mirror: https://github.com/astronomer/astro-cli/releases/download
+astro_checksums:
+  # https://github.com/astronomer/astro-cli/releases/download/v0.22.0/astro_0.22.0_checksums.txt
+  '0.22.0':
+    # https://github.com/astronomer/astro-cli/releases/download/v0.22.0/astro_0.22.0_darwin_386.tar.gz
+    darwin_386: sha256:a5ebd82cc3c2e793fb072a0e467f94a6f8a4dc6f311b55d7c8c6ac0b54070705
+    # https://github.com/astronomer/astro-cli/releases/download/v0.22.0/astro_0.22.0_darwin_amd64.tar.gz
+    darwin_amd64: sha256:30468d46a6b62dca8f84a57450ecf52d2f4232010fc09f7addfa9794c0ffac88
+    # https://github.com/astronomer/astro-cli/releases/download/v0.22.0/astro_0.22.0_linux_386.tar.gz
+    linux_386: sha256:7cb6c43924bc7d05637e31ae4a88c2da2749dd8f57b58eab30b56d4ca78b1ff1
+    # https://github.com/astronomer/astro-cli/releases/download/v0.22.0/astro_0.22.0_linux_amd64.tar.gz
+    linux_amd64: sha256:d473d84e269e0e91a5de754483fb4c962c2405d4f31b9145b4483dc555ef36f2
+    # https://github.com/astronomer/astro-cli/releases/download/v0.22.0/astro_0.22.0_windows_386.zip
+    windows_386: sha256:e8116f26fd96ab6b501fa88fe22bd45c84eac7da9162d1c7322008566c8f596e
+    # https://github.com/astronomer/astro-cli/releases/download/v0.22.0/astro_0.22.0_windows_amd64.zip
+    windows_amd64: sha256:1458d22fc8bf69363fbaca997b9e1a086dcf0bfc735089ae5c89073e5e958c26
+
+  # https://github.com/astronomer/astro-cli/releases/download/v0.22.2/astro_0.22.2_checksums.txt
+  '0.22.2':
+    # https://github.com/astronomer/astro-cli/releases/download/v0.22.2/astro_0.22.2_darwin_386.tar.gz
+    darwin_386: sha256:2bba2d41e00683d933f3c1c10a66a07e2fcc3ce251cfbaf47486e1f979df1f09
+    # https://github.com/astronomer/astro-cli/releases/download/v0.22.2/astro_0.22.2_darwin_amd64.tar.gz
+    darwin_amd64: sha256:161fd89a2d752acfdc19d1a1ce0617599beffd20c87efe206e68da379ebf31b3
+    # https://github.com/astronomer/astro-cli/releases/download/v0.22.2/astro_0.22.2_linux_386.tar.gz
+    linux_386: sha256:c71d680c7ed81ae8f6696ae43b9fd904f8783ac108ff18db3f2a3f385c4133fb
+    # https://github.com/astronomer/astro-cli/releases/download/v0.22.2/astro_0.22.2_linux_amd64.tar.gz
+    linux_amd64: sha256:7a3ee5aa0758166b47aa35f1e5daa177d54151141854d526c6f1cec86f0d37a6
+    # https://github.com/astronomer/astro-cli/releases/download/v0.22.2/astro_0.22.2_windows_386.zip
+    windows_386: sha256:375360328584e6f2c5835ce269cd33f6010e84593683a71a47a9793a4e50545c
+    # https://github.com/astronomer/astro-cli/releases/download/v0.22.2/astro_0.22.2_windows_amd64.zip
+    windows_amd64: sha256:b53d3d89261b27b56625879ce6a070df8644bcae58120279d5ba91689ccc4992
