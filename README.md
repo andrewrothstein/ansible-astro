@@ -1,6 +1,6 @@
 andrewrothstein.astro
 =========
-[![Build Status](https://travis-ci.org/andrewrothstein/ansible-astro.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-astro)
+![Build Status](https://github.com/andrewrothstein/ansible-astro/actions/workflows/build.yml/badge.svg)
 
 Installs the Astronomer's [astro-cli](https://github.com/astronomer/astro-cli)
 
