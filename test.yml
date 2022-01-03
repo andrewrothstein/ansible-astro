@@ -5,5 +5,6 @@
   tasks:
   - command: astro version
     register: astro_test_output
-  - debug:
+  - name: astro version
+    debug:
       msg: '{{ astro_test_output.stdout }}'
