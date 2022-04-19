@@ -24,7 +24,7 @@ dl_ver() {
     local lchecksums="$DIR/${checksums}"
     if [ ! -e $lchecksums ];
     then
-        wget -q -O $lchecksums $url
+        curl -sSLf -o $lchecksums $url
     fi
 
     printf "  # %s\n" $url
@@ -37,4 +37,4 @@ dl_ver() {
     dl $ver $lchecksums windows amd64 zip
 }
 
-dl_ver ${1:-0.27.1}
+dl_ver ${1:-0.28.1}
