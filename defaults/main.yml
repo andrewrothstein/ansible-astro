@@ -1,6 +1,6 @@
 ---
 # defaults file for astro
-astro_ver: 1.0.2
+astro_ver: 1.1.0
 astro_os: linux
 astro_arch: amd64
 astro_parent_install_dir: /usr/local
@@ -221,3 +221,21 @@ astro_checksums:
     windows_386: sha256:18dcf928311703143e04efbc6dc0951b54a45204d8bbaa8f4eed1aa0ccd56306
     # https://github.com/astronomer/astro-cli/releases/download/v1.0.2/astro_1.0.2_windows_amd64.zip
     windows_amd64: sha256:307e9b782618b21888e03d1a1e72b1515dba29c70e524540d86972f525b7496f
+  # https://github.com/astronomer/astro-cli/releases/download/v1.1.0/astro_1.1.0_checksums.txt
+  '1.1.0':
+    # https://github.com/astronomer/astro-cli/releases/download/v1.1.0/astro_1.1.0_darwin_amd64.tar.gz
+    darwin_amd64: sha256:0101cf7c61a6710d7476f7a2ef8395ac076f2d074696f167d4eca01fcca2b736
+    # https://github.com/astronomer/astro-cli/releases/download/v1.1.0/astro_1.1.0_darwin_arm64.tar.gz
+    darwin_arm64: sha256:75cdadb7523bebb0b0acfcb0d8724d2800fdbad6fb629a75c01a69f31c746eca
+    # https://github.com/astronomer/astro-cli/releases/download/v1.1.0/astro_1.1.0_linux_386.tar.gz
+    linux_386: sha256:9a36dfde3929cde6e6d96f947a86bb2b3f3437d1c4e708210070f0fe646051d4
+    # https://github.com/astronomer/astro-cli/releases/download/v1.1.0/astro_1.1.0_linux_amd64.tar.gz
+    linux_amd64: sha256:d56f540cd0ac5df5759ef7676cf1f78f1a510790b49b9f7531d83c18602842b2
+    # https://github.com/astronomer/astro-cli/releases/download/v1.1.0/astro_1.1.0_linux_arm64.tar.gz
+    linux_arm64: sha256:c01bdad2d8979f731cd8e3f8407c031b937d942fef45c3768a124a5d2f575b0b
+    # https://github.com/astronomer/astro-cli/releases/download/v1.1.0/astro_1.1.0_windows_386.zip
+    windows_386: sha256:8cca961fd0f2594cb707fde3d62bccb5606626bec713ab6b69972809e70b6412
+    # https://github.com/astronomer/astro-cli/releases/download/v1.1.0/astro_1.1.0_windows_amd64.zip
+    windows_amd64: sha256:124c0afd82e6c627bd36afc2b62cf78bf4bb0afa1ba59ab3cb03af249d5a7d5c
+    # https://github.com/astronomer/astro-cli/releases/download/v1.1.0/astro_1.1.0_windows_arm64.zip
+    windows_arm64: sha256:9268b5bf025c56da1028e350db7e721242013ec07235f3137d9e956628278e68
