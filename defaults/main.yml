@@ -1,8 +1,11 @@
 ---
 # defaults file for astro
-astro_ver: 1.5.0
-astro_os: linux
-astro_arch: amd64
+astro_ver: 1.5.1
+astro_arch_map:
+  386: 386
+  aarch64: arm64
+  arm64: arm64
+  x86_64: amd64
 astro_parent_install_dir: /usr/local
 astro_mirror: https://github.com/astronomer/astro-cli/releases/download
 astro_checksums:
@@ -311,3 +314,21 @@ astro_checksums:
     windows_amd64: sha256:446be0d465de5ba34029def9dd5c9bff566fdbefac18a6bd6f95db5b12a87b42
     # https://github.com/astronomer/astro-cli/releases/download/v1.5.0/astro_1.5.0_windows_arm64.zip
     windows_arm64: sha256:228e734ee62761ff385c1c1703f1590e88dd1069f67ff5b08348de61a6bd1b6d
+  # https://github.com/astronomer/astro-cli/releases/download/v1.5.1/astro_1.5.1_checksums.txt
+  '1.5.1':
+    # https://github.com/astronomer/astro-cli/releases/download/v1.5.1/astro_1.5.1_darwin_amd64.tar.gz
+    darwin_amd64: sha256:105d2d453c3c854e95b9d475db4a7bdd4712cb2b56387b40bf326f814339ff65
+    # https://github.com/astronomer/astro-cli/releases/download/v1.5.1/astro_1.5.1_darwin_arm64.tar.gz
+    darwin_arm64: sha256:6cd903f62d9a5be082f484fb208b5403ede170565c0f455426a604868643fa73
+    # https://github.com/astronomer/astro-cli/releases/download/v1.5.1/astro_1.5.1_linux_386.tar.gz
+    linux_386: sha256:f8b783994f97702f64afc164ed4513dfb970aba5eadeee1a9e23d675ef5205e2
+    # https://github.com/astronomer/astro-cli/releases/download/v1.5.1/astro_1.5.1_linux_amd64.tar.gz
+    linux_amd64: sha256:beb19e8078097c6591999828055b0d6b52189c49a165cffed59ca49e634e9730
+    # https://github.com/astronomer/astro-cli/releases/download/v1.5.1/astro_1.5.1_linux_arm64.tar.gz
+    linux_arm64: sha256:226f64a7cf4e6f90ac5ff1c9bac9ce765903b93f5ceb6ae62c05b558a8d45ef4
+    # https://github.com/astronomer/astro-cli/releases/download/v1.5.1/astro_1.5.1_windows_386.zip
+    windows_386: sha256:79d35a9bfbe531cb0e0263e2fd6f2a084dcdb652e922b132a3b67613a7bf1de7
+    # https://github.com/astronomer/astro-cli/releases/download/v1.5.1/astro_1.5.1_windows_amd64.zip
+    windows_amd64: sha256:8420a4b15f6b446eddc6b7eca57a8ddc878edc95ce100d948bf4e84edd463fa5
+    # https://github.com/astronomer/astro-cli/releases/download/v1.5.1/astro_1.5.1_windows_arm64.zip
+    windows_arm64: sha256:8ef3ce365fb21a992857c654117ccbc04e3dd6ed6f18485659d8c68692593281

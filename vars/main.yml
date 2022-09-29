@@ -1,5 +1,7 @@
 ---
 # vars file for astro
+astro_os: '{{ ansible_system | lower }}'
+astro_arch: '{{ astro_arch_map[ansible_architecture] }}'
 astro_platform: '{{ astro_os }}_{{ astro_arch }}'
 astro_archive: astro_{{ astro_ver }}_{{ astro_platform }}.{{ astro_archive_type | default("tar.gz") }}
 astro_tmp_archive: /tmp/{{ astro_archive }}
