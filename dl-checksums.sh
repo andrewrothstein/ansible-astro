@@ -13,8 +13,12 @@ dl() {
     local platform="${os}_${arch}"
     local file="${APP}_${ver}_${platform}.${archive_type}"
     local url="$MIRROR/v$ver/$file"
-    printf "    # %s\n" $url
-    printf "    %s: sha256:%s\n" $platform $(grep $file $lchecksums | awk '{print $1}')
+    local shasum=$(grep $file $lchecksums | awk '{print $1}')
+    if [ ! -z $shasum ];
+    then
+        printf "    # %s\n" $url
+        printf "    %s: sha256:%s\n" $platform $shasum
+    fi
 }
 
 dl_ver() {
@@ -40,4 +44,4 @@ dl_ver() {
     dl $ver $lchecksums windows arm64 zip
 }
 
-dl_ver ${1:-1.5.1}
+dl_ver ${1:-1.6.0}
