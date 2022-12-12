@@ -12,7 +12,7 @@
       paths:
         - '{{ role_path }}/vars'
 - name: check for install at {{ astro_install_dir }}
-  become: yes
+  become: true
   stat:
     path: '{{ astro_install_dir }}'
   changed_when: False
@@ -20,7 +20,7 @@
 - when: not astro_binary.stat.exists
   block:
     - name: download from {{ astro_url }} to {{ astro_tmp_archive }}
-      become: yes
+      become: true
       become_user: root
       get_url:
         url: '{{ astro_url }}'
@@ -28,29 +28,29 @@
         mode: 0644
         checksum: '{{ astro_checksum }}'
     - name: mkdir {{ astro_install_dir }}
-      become: yes
+      become: true
       become_user: root
       file:
         path: '{{ astro_install_dir }}'
         state: directory
         mode: 0755
     - name: unarchive {{ astro_tmp_archive }} to {{ astro_install_dir }}
-      become: yes
+      become: true
       become_user: root
       unarchive:
-        remote_src: yes
+        remote_src: true
         src: '{{ astro_tmp_archive }}'
         dest: '{{ astro_install_dir }}'
         creates: '{{ astro_install_exe }}'
   always:
     - name: rm {{ astro_tmp_archive }}
-      become: yes
+      become: true
       become_user: root
       file:
         path: '{{ astro_tmp_archive }}'
         state: absent
 - name: link {{ astro_link }} to {{ astro_install_exe }}
-  become: yes
+  become: true
   become_user: root
   file:
     src: '{{ astro_install_exe }}'
