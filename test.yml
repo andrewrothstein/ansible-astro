@@ -1,10 +1,13 @@
 ---
-- hosts: all
+- name: Testing andrewrothstein.astro
+  hosts: all
   roles:
-  - role: '{{ playbook_dir }}'
+    - role: '{{ playbook_dir }}'
   tasks:
-  - command: astro version
-    register: astro_test_output
-  - name: astro version
-    debug:
-      msg: '{{ astro_test_output.stdout }}'
+    - name: Executing 'astro version'
+      ansible.builtin.command: astro version
+      changed_when: false
+      register: astro_test_output
+    - name: Output from 'astro version'
+      ansible.builtin.debug:
+        msg: '{{ astro_test_output.stdout }}'
